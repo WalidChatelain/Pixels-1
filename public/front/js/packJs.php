@@ -8,44 +8,35 @@
     $files = [
         // LIBRARIES
         'lib/jquery.js',
-        'lib/underscore.js',      
+        'lib/underscore.js',
         'lib/backbone.js',
         'lib/backbone.pclia.js',
-        'lib/handlebars.js',        
-        'lib/handlebars.pclia.js',          
-        // MODELS        
-        'models/Actualites.js',
-        'models/Categorie.js',
-        'models/Categories.js',
-        'models/FicheTechnique.js',
-        'models/New.js',
-        'models/News.js',
-        'models/Quizz.js',
-        'models/QuizzList.js',
-        'models/Utilisateur.js',
-        'models/Theme.js',
-        'models/Themes.js',
+        'lib/handlebars.js',
+        'lib/handlebars.pclia.js',
+        'lib/bootstrap.min.js',
+        'lib/jquery.validate.js',
+        'lib/default.js',
+        'lib/highcharts.js',
+        'lib/jquery.noty.js',
+        'lib/top.js',
+        'lib/topCenter.js',
+        'lib/topLeft.js',
+        'lib/topRight.js',
+        // MODELS
         // VIEWS
-        'views/View_Actualites.js',
-        'views/View_Categorie.js',
-        'views/View_Categories.js',
-        'views/View_FicheTechnique.js',
-        'views/View_New.js',
-        'views/View_News.js',
-        'views/View_Quizz.js',
-        'views/View_QuizzList.js',
-        'views/View_Theme.js',
-        'views/View_Themes.js',       
-        // OTHERS        
+        // OTHERS
         // MAIN
-        'test.js',
+        'login.js',
+        'inscription.js',
+        'news.js',
+        'newsCarousel.js',
     ];
-    
+
     $js = '';
     foreach ($files as $file) {
         $js = $js . file_get_contents($file) . "\n";
     }
-    
+
 /*
 |--------------------------------------------------------------------------
 | Regroupe toutes les templates en une seule varaiable Js global

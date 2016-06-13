@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Ciao</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <script src="js/packJs.php"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="imageHeader">
+      <header class="header-login-signup">
+        <div class="header-limiter">
+          <p>
+            <img id="imgLogoHeader" src="css/images/ciaologo.png" alt="Ciao logo">
+          </p>
+          <ul>
+            <li><a id="headerCo" href="connection.html">Connection</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+          </ul>
+        </div>
+        <nav class="menu-navigation-basic">
+          <a href="index.html">Accueil</a>
+          <a href="actualites.html">Actualité</a>
+          <a href="index.html">Catégories</a>
+          <a href="index.html">Q&R/Forum</a>
+          <a href="index.html">Quiz</a>
+          <a href="Urgences.html">Urgences</a>
+        </nav>
+      </header>
+      <main>
+        <section id="login">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-wrap">
+                  <h1>Connection</h1>
+                  <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                    <div class="form-group">
+                      <label for="pseudo" class="sr-only">Pseudo</label>
+                      <input type="text" name="pseudo" id="pseudo" class="form-control" placeholder="Pseudo">
+                    </div>
+                    <div class="form-group">
+                      <label for="key" class="sr-only">Mot de passe</label>
+                      <input type="password" name="key" id="key" class="form-control" placeholder="Mot de passe">
+                    </div>
+                    <div class="checkbox">
+                      <span class="character-checkbox" onclick="showPassword()"></span>
+                      <span class="label">Montrer mot de passe</span>
+                    </div>
+                    <input type="submit" id="btn-login" disabled="disabled" class="btn btn-custom btn-lg btn-block" value="Log in">
+                  </form>
+                  <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Oublier ton mot de passe?</a>
+                </div>
+              </div> <!-- /.col-xs-12 -->
+            </div> <!-- /.row -->
+          </div> <!-- /.container -->
+        </section>
+        <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">×</span>
+                  <span class="sr-only">Fermer</span>
+                </button>
+                <h4 class="modal-title">Récupérer mot de passe</h4>
+              </div>
+              <div class="modal-body">
+                <p>Taper ton pseudo</p>
+                <input type="text" name="recovery-pseudo" id="recovery-pseudo" class="form-control" autocomplete="off">
+                <p>Taper la réponse à ta question secrète</p>
+                <input type="text" name="recovery-question" id="recovery-question" class="form-control" autocomplete="off">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-custom">Récupérer</button>
+              </div>
+            </div> <!-- /.modal-content -->
+          </div> <!-- /.modal-dialog -->
+        </div> <!-- /.modal -->
+      </main>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <p>
+            <img id="imgLogoFooter" src="img/ciaologofooter.svg" alt="Ciao logo">
+          </p>
+          <p class="footer-links">
+            <a href="QuiSommesNous.html">Qui sommes-nous?</a>
+            ·
+            <a href="AvisUtilisateur.html">Ton avis</a>
+            ·
+            <a href="ConditionsUtilisation.html">Condition d'utilisation</a>
+          </p>
+          <p class="footer-company-name">Ciao &copy; 2016</p>
+        </div>
+        <div class="footer-center">
+          <div>
+            <p>Sponsors</p>
+            <div class="imageSponsor">
+              <p>
+                <img src="img/oak.png" alt="Oak Fondation logo">
+              </p>
+              <p>
+                <img src="img/loterie.png" alt="Loterie romande logo">
+              </p>
+            </div>
+            <p>Parrains</p>
+            <div class="imageSponsor">
+                <p>
+                  <img src="img/vaudoise.png" alt="Vaudoise assurance logo">
+                </p>
+                <p>Fondation Otto Beishein</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>A propos de Ciao</span>
+            Ciao est une plateforme d'information, d'aide et d'échanges pour les 11-20ans.
+          </p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/ciao.ch"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/ciao.ch"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/ciao.ch"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/ciao.ch"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
